@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!-- 
+RESTAURANT DOOKHA WEBSITE 
+Created by: Andrew Larson
+Date Created: 1/30/19
+Last Updated: 2/3/19
+-->
+<html>
+	<head>
+		
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		
+		<!-- custom style sheet -->
+		<link href="styles/luckySevens.css" rel="stylesheet" type="text/css" />
+		
+		<!-- custom JS sheet -->
+		<script type="text/JavaScript" src="luckySevensScripts.js"></script>
+		
+		<title>
+		Lucky Sevens!
+		</title>
+	</head>
+	<body>
+		<div class="container-fluid center_div">
+			<div class="mx-auto"> <!-- center all of our features -->
+				
+				<header class="jumbotron">
+						<h1 class="display-2">Lucky Sevens</h1>	
+				</header>
+				
+				<form name="luckySevens" onsubmit="return validateItems();" 
+					  onreset="resetForm();" class="form-inline">
+						<div class="form-group">
+							<label for="bet">Starting Bet:</label>
+							<input type="text" class="form-control" id="bet" value="$0.00"> <!-- default value -->
+						</div>
+						<button type="submit" id="submitButton" class="btn btn-outline-info">Play</button>
+						<!--<button type="reset" id="resetButton" class="btn">Reset</button> reset button for testing-->
+				</form>
+				
+				<hr class="hr1"/>
+				
+				<div class="table-responsive-sm">
+					<table id="results" class="table table-responsive" style="display:none;">
+						<thead class="thead-info">
+							<tr>
+								<th colspan="2" style="text-align: center;">Results</th>
+							</tr>
+						</thead>
+						<tbody style="text-align:left;">
+							<tr>
+								<td>Starting Bet</td>
+								<td>$<span id="startingBet"></span></td>
+							</tr>
+							<tr>
+								<td>Total Rolls Before Going Broke</td>
+								<td><span id="totalRolls"></span></td>
+							</tr>
+							<tr>
+								<td>Highest Amount Won After Your First Bet</td>
+								<td>$<span id="highestAmount"></span></td>
+							</tr>
+							<tr>
+								<td>Roll Count at Highest Amount Won</td>
+								<td><span id="challengingResult"></span></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+		<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	</body>
+</html>

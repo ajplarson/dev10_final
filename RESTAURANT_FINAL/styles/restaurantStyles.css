@@ -1,0 +1,91 @@
+@font-face {
+  font-family: 'MyFont';
+  src: url('webfont.eot'); /* IE9 Compat Modes */
+  src: url('webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('webfont.woff2') format('woff2'), /* Super Modern Browsers */
+       url('webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+} /* from css-tricks.com */
+
+
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
+
+.hr1 {
+	border: 2px solid #30030c; 
+	font-size: 2.5em;
+}
+
+.hr2 {
+	border: 2px solid #e2a55f; 
+	font-size: 2.5em;
+	width: 85%;
+}
+
+.jumbotron {
+	background-color: #30030c;
+	color: #e2a55f;
+	font-family: MyFont;
+	
+}
+h2 {
+    padding-top: 12px;
+	padding-bottom: 12px;
+	color: #2d1306;
+	font-family: "Trebuchet MS", Helvetica, sans-serif, MyFont;
+}
+
+h4, p {
+	color: #ffedd8;
+	text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+}
+
+.form-check-inline {
+	padding-left: 10px;
+}
+
+
+
+h5,h6 {
+	padding-top: 14px;
+	font-family: "Trebuchet MS", Helvetica, sans-serif, MyFont;
+}
+
+.display-2{
+	text-align: center;
+	font-weight: bold;
+	font-style: oblique;
+}
+th {
+	text-align: center;
+	font-family: "Trebuchet MS", Helvetica, sans-serif, MyFont;
+	font-weight: bold;
+	font-size: 1.5em;
+}
+td {
+	text-align: center;
+	font-family: "Trebuchet MS", Helvetica, sans-serif, MyFont;
+}
+
+img {
+	padding-bottom: 20px;
+}
+.carousel {
+  width:37.5em;
+  height:25em;
+}
+
+.carousel-inner img {
+  margin: 0 auto;
+}
+
+
+
+
