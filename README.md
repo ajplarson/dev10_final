@@ -1,4 +1,4 @@
-# Project
+# Projects
 Two projects that I worked on.
 
 Lucky Sevens
